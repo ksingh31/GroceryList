@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ODSQuery.aspx.cs" Inherits="WebApp.Pages.ODSQuery" %>
+﻿<%@ Page Title="ODS Query" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ODSQuery.aspx.cs" Inherits="WebApp.Pages.ODSQuery" %>
 
 <%@ Register Src="~/UserControls/MessageUserControl.ascx" TagPrefix="uc1" TagName="MessageUserControl" %>
 
@@ -11,9 +11,11 @@
         <asp:ListItem Value="0">Select..</asp:ListItem>
     </asp:DropDownList>
 
-    &nbsp;<asp:Button ID="FetchButton" runat="server" Text="Fetch" />
+    &nbsp;<asp:Button ID="FetchButton" runat="server" CssClass="btn" Text="Fetch" />
+    <br /><br /><br />
     
-    <asp:GridView ID="ProductGridView" runat="server" AutoGenerateColumns="False" DataSourceID="ProductListData">
+    <asp:GridView ID="ProductGridView" runat="server" AutoGenerateColumns="False" DataSourceID="ProductListData"
+         CssClass="table table-striped">
         <Columns>
             <asp:TemplateField HeaderText="ProductID" SortExpression="ProductID">
                 <EditItemTemplate>

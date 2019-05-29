@@ -40,6 +40,24 @@ namespace WebApp.Pages {
         protected global::System.Web.UI.WebControls.ObjectDataSource CategoryODS;
         
         /// <summary>
+        /// ValidationSummaryInsert control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummaryInsert;
+        
+        /// <summary>
+        /// ValidationSummaryUpdate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummaryUpdate;
+        
+        /// <summary>
         /// ProductListView control.
         /// </summary>
         /// <remarks>

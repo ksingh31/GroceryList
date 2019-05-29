@@ -34,6 +34,11 @@ namespace GroceryList.Data.Entities
 
         public bool Taxable { get; set; }
 
+        public string DescriptionUnitSize
+        {
+            get { return Description + " (" + UnitSize + ")"; }
+        }
+
         public virtual Category Category { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
